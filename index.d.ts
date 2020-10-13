@@ -23,6 +23,11 @@ declare namespace Aubio {
       sampleRate: number // sampling rate of the signal
     );
     do(buffer: InputArray): number;
+    setTolerance(tol: number): number;
+    getTolerance(): number;
+    setSilence(silence: number): number;
+    getSilence(): number;
+    getConfidence(): number;
   }
 
   class Tempo {
